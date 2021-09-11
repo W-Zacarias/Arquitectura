@@ -37,6 +37,7 @@ Partial Class Form1
         'ProgressBar1
         '
         Me.ProgressBar1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ProgressBar1.Cursor = System.Windows.Forms.Cursors.Default
         Me.ProgressBar1.Location = New System.Drawing.Point(45, 247)
         Me.ProgressBar1.Name = "ProgressBar1"
         Me.ProgressBar1.Size = New System.Drawing.Size(415, 43)

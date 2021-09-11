@@ -10,3 +10,15 @@ C:\Users\Wily\source\repos\Proyect\Proyect\obj\Debug\Proyect.vbproj.CoreCompileI
 C:\Users\Wily\source\repos\Proyect\Proyect\obj\Debug\Proyect.exe
 C:\Users\Wily\source\repos\Proyect\Proyect\obj\Debug\Proyect.xml
 C:\Users\Wily\source\repos\Proyect\Proyect\obj\Debug\Proyect.pdb
+C:\Users\Wily\source\repos\Arquitectura\Proyect\bin\Debug\Proyect.exe.config
+C:\Users\Wily\source\repos\Arquitectura\Proyect\bin\Debug\Proyect.exe
+C:\Users\Wily\source\repos\Arquitectura\Proyect\bin\Debug\Proyect.pdb
+C:\Users\Wily\source\repos\Arquitectura\Proyect\bin\Debug\Proyect.xml
+C:\Users\Wily\source\repos\Arquitectura\Proyect\obj\Debug\Proyect.vbproj.AssemblyReference.cache
+C:\Users\Wily\source\repos\Arquitectura\Proyect\obj\Debug\Proyect.Form1.resources
+C:\Users\Wily\source\repos\Arquitectura\Proyect\obj\Debug\Proyect.Resources.resources
+C:\Users\Wily\source\repos\Arquitectura\Proyect\obj\Debug\Proyect.vbproj.GenerateResource.cache
+C:\Users\Wily\source\repos\Arquitectura\Proyect\obj\Debug\Proyect.vbproj.CoreCompileInputs.cache
+C:\Users\Wily\source\repos\Arquitectura\Proyect\obj\Debug\Proyect.exe
+C:\Users\Wily\source\repos\Arquitectura\Proyect\obj\Debug\Proyect.xml
+C:\Users\Wily\source\repos\Arquitectura\Proyect\obj\Debug\Proyect.pdb
