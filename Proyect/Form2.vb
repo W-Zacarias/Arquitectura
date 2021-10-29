@@ -25,8 +25,9 @@
                 TextBox1.AppendText(datos.Replace("R", vbCrLf))
             End If
             If datos.Contains("U") Then
-                TextBox2.AppendText(datos.Replace("U", vbCrLf))
+                TextBox1.AppendText(datos.Replace("U", vbCrLf))
             End If
+
 
         End If
 
@@ -64,7 +65,14 @@
 
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+    Private Sub Label2_Click(sender As Object, e As EventArgs)
 
+    End Sub
+    Private Sub Form2_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        If MsgBox("GRACIAS POR UTILIZAR MI SOFTWARE - WILY ZACARIAS") Then
+            If SerialPort1.IsOpen Then
+                SerialPort1.Close()
+            End If
+        End If
     End Sub
 End Class

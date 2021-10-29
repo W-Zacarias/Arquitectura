@@ -35,9 +35,9 @@ Partial Class Form2
         Me.Label3 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.SerialPort1 = New System.IO.Ports.SerialPort(Me.components)
-        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel4.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -167,15 +167,6 @@ Partial Class Form2
         '
         Me.SerialPort1.PortName = "COM3"
         '
-        'Panel2
-        '
-        Me.Panel2.Controls.Add(Me.Label2)
-        Me.Panel2.Controls.Add(Me.TextBox2)
-        Me.Panel2.Location = New System.Drawing.Point(451, 87)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(362, 315)
-        Me.Panel2.TabIndex = 16
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -183,9 +174,9 @@ Partial Class Form2
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(213, Byte), Integer), CType(CType(219, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(10, 19)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(321, 31)
+        Me.Label2.Size = New System.Drawing.Size(324, 31)
         Me.Label2.TabIndex = 10
-        Me.Label2.Text = "ACCESO A USUARIOS"
+        Me.Label2.Text = "REGISTRO USUARIOS"
         '
         'TextBox2
         '
@@ -196,6 +187,15 @@ Partial Class Form2
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(330, 221)
         Me.TextBox2.TabIndex = 9
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.Label2)
+        Me.Panel2.Controls.Add(Me.TextBox2)
+        Me.Panel2.Location = New System.Drawing.Point(459, 87)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(362, 315)
+        Me.Panel2.TabIndex = 16
         '
         'Form2
         '
@@ -234,7 +234,7 @@ Partial Class Form2
     Friend WithEvents SerialPort1 As IO.Ports.SerialPort
     Friend WithEvents Label1 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents Panel2 As Panel
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Panel2 As Panel
 End Class
