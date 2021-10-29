@@ -22,3 +22,8 @@ C:\Users\Wily\source\repos\Arquitectura\Proyect\obj\Debug\Proyect.vbproj.CoreCom
 C:\Users\Wily\source\repos\Arquitectura\Proyect\obj\Debug\Proyect.exe
 C:\Users\Wily\source\repos\Arquitectura\Proyect\obj\Debug\Proyect.xml
 C:\Users\Wily\source\repos\Arquitectura\Proyect\obj\Debug\Proyect.pdb
+C:\Users\Wily\source\repos\Arquitectura\Proyect\obj\Debug\Proyect.Form2.resources
+C:\Users\Wily\source\repos\Arquitectura\Proyect\bin\Debug\CircularProgressBar.dll
+C:\Users\Wily\source\repos\Arquitectura\Proyect\bin\Debug\WinFormAnimation.dll
+C:\Users\Wily\source\repos\Arquitectura\Proyect\bin\Debug\CircularProgressBar.xml
+C:\Users\Wily\source\repos\Arquitectura\Proyect\obj\Debug\Proyect.vbproj.CopyComplete

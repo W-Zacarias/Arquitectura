@@ -26,6 +26,7 @@ Partial Class Form1
         Me.SerialPort1 = New System.IO.Ports.SerialPort(Me.components)
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.txtDatoRecibidoT = New System.Windows.Forms.TextBox()
+        Me.res = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -38,18 +39,17 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.SALIR = New System.Windows.Forms.Button()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.res = New System.Windows.Forms.TextBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'SerialPort1
@@ -77,6 +77,16 @@ Partial Class Form1
         Me.txtDatoRecibidoT.Size = New System.Drawing.Size(279, 96)
         Me.txtDatoRecibidoT.TabIndex = 6
         Me.txtDatoRecibidoT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'res
+        '
+        Me.res.Enabled = False
+        Me.res.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.res.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.res.Location = New System.Drawing.Point(414, 373)
+        Me.res.Name = "res"
+        Me.res.Size = New System.Drawing.Size(161, 29)
+        Me.res.TabIndex = 7
         '
         'Label1
         '
@@ -165,7 +175,7 @@ Partial Class Form1
         '
         Me.Label5.AccessibleRole = System.Windows.Forms.AccessibleRole.None
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(411, 334)
+        Me.Label5.Location = New System.Drawing.Point(411, 350)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(185, 13)
         Me.Label5.TabIndex = 13
@@ -207,7 +217,6 @@ Partial Class Form1
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.Proyect.My.Resources.Resources.Imagen1
         Me.PictureBox1.Location = New System.Drawing.Point(12, 0)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(168, 142)
@@ -217,7 +226,7 @@ Partial Class Form1
         '
         'Panel4
         '
-        Me.Panel4.Controls.Add(Me.Label6)
+        Me.Panel4.Controls.Add(Me.DateTimePicker1)
         Me.Panel4.Controls.Add(Me.SALIR)
         Me.Panel4.Controls.Add(Me.Button1)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
@@ -225,6 +234,13 @@ Partial Class Form1
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(919, 81)
         Me.Panel4.TabIndex = 13
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(12, 12)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
+        Me.DateTimePicker1.TabIndex = 14
         '
         'SALIR
         '
@@ -237,43 +253,23 @@ Partial Class Form1
         Me.SALIR.Text = "SALIR"
         Me.SALIR.UseVisualStyleBackColor = False
         '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.Proyect.My.Resources.Resources.Sin_título_2
-        Me.PictureBox3.Location = New System.Drawing.Point(414, 149)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(172, 141)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox3.TabIndex = 15
-        Me.PictureBox3.TabStop = False
-        '
         'PictureBox2
         '
-        Me.PictureBox2.Image = Global.Proyect.My.Resources.Resources.alerta
-        Me.PictureBox2.Location = New System.Drawing.Point(414, 149)
+        Me.PictureBox2.Location = New System.Drawing.Point(400, 138)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(172, 141)
+        Me.PictureBox2.Size = New System.Drawing.Size(205, 187)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 14
         Me.PictureBox2.TabStop = False
         '
-        'Label6
+        'PictureBox3
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.DarkRed
-        Me.Label6.Location = New System.Drawing.Point(102, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(494, 73)
-        Me.Label6.TabIndex = 9
-        Me.Label6.Text = "DATA CENTER"
-        '
-        'res
-        '
-        Me.res.Location = New System.Drawing.Point(429, 363)
-        Me.res.Name = "res"
-        Me.res.Size = New System.Drawing.Size(157, 20)
-        Me.res.TabIndex = 16
+        Me.PictureBox3.Location = New System.Drawing.Point(456, 138)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(205, 187)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 15
+        Me.PictureBox3.TabStop = False
         '
         'Form1
         '
@@ -281,7 +277,6 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(73, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(919, 559)
-        Me.Controls.Add(Me.res)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Label5)
@@ -289,6 +284,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.res)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -301,9 +297,8 @@ Partial Class Form1
         Me.Panel3.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
-        Me.Panel4.PerformLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -312,6 +307,7 @@ Partial Class Form1
     Friend WithEvents SerialPort1 As IO.Ports.SerialPort
     Friend WithEvents ProgressBar1 As ProgressBar
     Friend WithEvents txtDatoRecibidoT As TextBox
+    Friend WithEvents res As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Panel1 As Panel
@@ -325,8 +321,7 @@ Partial Class Form1
     Friend WithEvents SALIR As Button
     Friend WithEvents CircularProgressBar1 As CircularProgressBar.CircularProgressBar
     Friend WithEvents Label5 As Label
+    Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents Label6 As Label
-    Friend WithEvents res As TextBox
 End Class
