@@ -24,6 +24,9 @@
             If datos.Contains("R") Then
                 TextBox1.AppendText(datos.Replace("R", vbCrLf))
             End If
+            If datos.Contains("U") Then
+                TextBox2.AppendText(datos.Replace("U", vbCrLf))
+            End If
 
         End If
 
@@ -61,6 +64,7 @@
 
     End Sub
 
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
 
-
+    End Sub
 End Class

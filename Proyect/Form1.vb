@@ -29,7 +29,7 @@
                 txtDatoRecibidoT.Text = datos.Replace("T", "")
                 Dim valor As Integer = 0
                 valor = txtDatoRecibidoT.Text
-                If valor > 50 Then
+                If valor > 27 Then
                     setProgresBar(valor, Color.Red)
                 ElseIf valor > 27 And valor <= 28 Then
                     setProgresBar(valor, Color.Yellow)
@@ -43,6 +43,7 @@
                 CircularProgressBar1.Text = datos.Replace("D", "")
                 Dim valor1 As Integer = 0
                 valor1 = CircularProgressBar1.Text
+
                 If valor1 >= 0 And valor1 <= 5 Then
                     CircularProgressBar1.Value = 100 - valor1
                     CircularProgressBar1.ForeColor = Color.Red
@@ -57,6 +58,8 @@
                     CircularProgressBar1.Text = (valor1).ToString() + "CM"
                     PictureBox2.Visible = True
                     Label5.Visible = True
+                ElseIf valor1 >= 10 Then
+                    CircularProgressBar1.Value = 100 - valor1
                 End If
             ElseIf datos.Contains("X") Then
                 res.Text = datos.Replace("X", "")

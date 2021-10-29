@@ -24,6 +24,7 @@ Partial Class Form2
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.SALIR = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -34,11 +35,14 @@ Partial Class Form2
         Me.Label3 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.SerialPort1 = New System.IO.Ports.SerialPort(Me.components)
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Panel4.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel4
@@ -51,6 +55,17 @@ Partial Class Form2
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(929, 81)
         Me.Panel4.TabIndex = 18
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.DarkRed
+        Me.Label6.Location = New System.Drawing.Point(88, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(494, 73)
+        Me.Label6.TabIndex = 19
+        Me.Label6.Text = "DATA CENTER"
         '
         'SALIR
         '
@@ -78,7 +93,7 @@ Partial Class Form2
         '
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.TextBox1)
-        Me.Panel1.Location = New System.Drawing.Point(263, 87)
+        Me.Panel1.Location = New System.Drawing.Point(50, 87)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(362, 315)
         Me.Panel1.TabIndex = 15
@@ -152,16 +167,35 @@ Partial Class Form2
         '
         Me.SerialPort1.PortName = "COM3"
         '
-        'Label6
+        'Panel2
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.DarkRed
-        Me.Label6.Location = New System.Drawing.Point(88, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(494, 73)
-        Me.Label6.TabIndex = 19
-        Me.Label6.Text = "DATA CENTER"
+        Me.Panel2.Controls.Add(Me.Label2)
+        Me.Panel2.Controls.Add(Me.TextBox2)
+        Me.Panel2.Location = New System.Drawing.Point(451, 87)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(362, 315)
+        Me.Panel2.TabIndex = 16
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(213, Byte), Integer), CType(CType(219, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(10, 19)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(321, 31)
+        Me.Label2.TabIndex = 10
+        Me.Label2.Text = "ACCESO A USUARIOS"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(16, 66)
+        Me.TextBox2.Multiline = True
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(330, 221)
+        Me.TextBox2.TabIndex = 9
         '
         'Form2
         '
@@ -169,6 +203,7 @@ Partial Class Form2
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(73, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(929, 563)
+        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel3)
@@ -182,6 +217,8 @@ Partial Class Form2
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -197,4 +234,7 @@ Partial Class Form2
     Friend WithEvents SerialPort1 As IO.Ports.SerialPort
     Friend WithEvents Label1 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Label2 As Label
+    Friend WithEvents TextBox2 As TextBox
 End Class
